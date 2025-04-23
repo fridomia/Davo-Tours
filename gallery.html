@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Davo Tours</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="gallery-section">
+    <h2>Explore Rwanda with Us</h2>
+    <div class="gallery-container">
+      <!-- Gallery images with image-card -->
+      <div class="image-card">
+        <img src="mountains.jpg" alt="Volcanoes National Park" onclick="openPreview(0)">
+      </div>
+      <div class="image-card">
+        <img src="kigali.jpeg" alt="Kigali City" onclick="openPreview(1)">
+      </div>
+      <div class="image-card">
+        <img src="akagera.jpg" alt="Akagera Safari" onclick="openPreview(2)">
+      </div>
+      <div class="image-card">
+        <img src="kivu.jpg" alt="Lake Kivu" onclick="openPreview(3)">
+      </div>
+      <div class="image-card">
+        <img src="nyanza.jpg" alt="Nyanza Palace" onclick="openPreview(4)">
+      </div>
+      <div class="image-card">
+        <img src="zebra.jpg" alt="Zebra Safari" onclick="openPreview(5)">
+      </div>
+    </div>
+
+    <!-- Gallery grid images -->
+    <div class="gallery-grid">
+      <img src="flag.jpg" alt="Rwandan Flag" onclick="openPreview(6)">
+      <img src="gorilla.jpg" alt="Gorilla Trekking" onclick="openPreview(7)">
+      <img src="leopard.jpg" alt="Leopard Spotting" onclick="openPreview(8)">
+      <img src="monkey.jpg" alt="Monkey in Nyungwe" onclick="openPreview(9)">
+      <img src="nyaruguru.jpg" alt="Nyaruguru Hills" onclick="openPreview(10)">
+      <img src="person.jpg" alt="Tourist Adventure" onclick="openPreview(11)">
+      <img src="person1.jpg" alt="Local Experience" onclick="openPreview(12)">
+      <img src="person2.jpg" alt="Guided Journey" onclick="openPreview(13)">
+      <img src="person3.jpg" alt="Cultural Tour" onclick="openPreview(14)">
+      <img src="person4.jpg" alt="Wildlife Explorer" onclick="openPreview(15)">
+      <img src="nyungwe.jpeg" alt="Nyungwe Forest" onclick="openPreview(16)">
+      <img src="zebra1.webp" alt="Zebras in Akagera" onclick="openPreview(17)">
+      <img src="giraffe.jpg" alt="Giraffe in Akagera" onclick="openPreview(18)">
+    </div>
+  </section>
+
+  <!-- Lightbox preview -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-btn" onclick="closePreview()">×</span>
+    <img id="lightbox-img" src="" alt="Preview">
+    <p id="lightbox-caption"></p>
+    <button class="nav-btn prev-btn" onclick="changeImage(-1)">‹</button>
+    <button class="nav-btn next-btn" onclick="changeImage(1)">›</button>
+  </div>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    
+    <p>If you want to reach out for a customized tour or more info:</p>
+<p>Email: <strong>daviduwayo001@gmail.com</strong></p>
+<p>Phone: <strong>+250 727 400 730</strong></p>
+<p>WhatsApp: <strong>+250 784 961 134</strong></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="owner">
+        <img src="owner.jpg" alt="UWAYO David" />
+        <p>Founder: UWAYO David</p>
+      </div>
+      <div class="developer">
+        <p>Website Developer:<br><strong>NISHIMWE Joel Patient</strong></p>
+        <p>Email: kuanjoeking1@gmail.com</p>
+        <p>WhatsApp: +250794678527</p>
+      </div>
+    </div>
+    <p class="copyright">
+      &copy; 2025 Davo Tours Company. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
